@@ -1,5 +1,5 @@
 /*
- * Worker web server
+ * Workers web server
  * https://github.com/h5mcbox/Worker_web_server
  * 2020-07-22
 */
