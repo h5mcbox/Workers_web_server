@@ -11,7 +11,7 @@ route["/text"]="A example text page."
 route["/404"]=function(){
   return ["404 Not found.",{status:404,headers:{}}]
 }
-/****************core****************/
+/****************Core****************/
 addEventListener('fetch', e => {
   e.respondWith(handleRequest(e.request))
 })
