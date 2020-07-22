@@ -1,6 +1,7 @@
 /*
  * Workers web server
  * https://github.com/h5mcbox/Worker_web_server
+ * H503mc & h5mcbox
  * 2020-07-22
 */
 var route={}
