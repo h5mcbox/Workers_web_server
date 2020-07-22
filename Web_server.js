@@ -27,7 +27,7 @@ async function res(body=route["/404"],status=200,headers={}){
       return new Response(body, {status,headers})
     }
   }catch(e){
-    if(route["500"]){
+    if(route["/500"]){
       var func=route["/500"](e.name,e.message)
       return new Response(func[0],func[1])
     }
