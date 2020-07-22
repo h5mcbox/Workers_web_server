@@ -5,7 +5,9 @@
 */
 var route={}
 route["/"]=function(url){
-  return ["A web server for cloudflare workers.\nlocation.href="+url.href,{status:200,headers:{}}]
+  var headers={}
+  headers["content-type"]="text/html"
+  return ["<h1>A web server for cloudflare workers.\n<br>location.href="+url.href+"</h1>",{status:200,headers}]
 }
 route["/text"]="A example text page."
 route["/404"]=function(){
