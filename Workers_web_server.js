@@ -23,7 +23,7 @@ route["/404"]=function(){
   return ["404 Not found.",{status:404,headers:{}}]
 }                                                                                                //404 page template(/404)
 route["/500"]=function(url){
-  if(url.pathname="/500"){
+  if(url.pathname==="/500"){
     return route["/404"](url)
   }                                                                                              //hide 500 page
   return ["Web server gots some error.\n"+e.name+" "+e.message,{status:500,headers:{}}]
